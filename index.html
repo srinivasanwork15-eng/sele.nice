@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal Portfolio of Srinivasan - Junior Front-End Developer crafting accessible, responsive, and performance-focused web experiences.">
+  <title>Srinivasan | Front-End Developer</title>
+  
+  <!-- Preconnect to Google Fonts for optimal typography performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Favicon placeholder (inline SVG) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+</head>
+<body>
+  <!-- Skip link for keyboard accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header & Navigation -->
+  <header class="site-header" id="header">
+    <div class="container header-container">
+      <a href="#home" class="brand-logo" aria-label="Srinivasan Portfolio Home">
+        <span class="logo-symbol">&lt;/&gt;</span>
+        <span class="logo-text">srinivasan<span class="logo-dot">.</span>dev</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="main-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Action & Mobile Menu Toggle -->
+      <div class="header-actions">
+        <a href="#contact" class="btn btn-sm btn-outline header-cta">Let's Talk</a>
+        <button type="button" class="mobile-menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mobileMenu" aria-label="Toggle navigation menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Navigation -->
+    <div class="mobile-drawer" id="mobileMenu" aria-hidden="true">
+      <div class="mobile-drawer-content">
+        <ul class="mobile-nav-list">
+          <li><a href="#home" class="mobile-nav-link">Home</a></li>
+          <li><a href="#about" class="mobile-nav-link">About Me</a></li>
+          <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+          <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+          <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+        </ul>
+        <div class="mobile-drawer-footer">
+          <a href="#contact" class="btn btn-primary btn-block">Get in Touch</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Hero / Home Section -->
+    <section class="section hero-section" id="home">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="status-badge">
+            <span class="status-dot"></span>
+            <span class="status-text">Available for junior roles &amp; freelance projects</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="text-highlight">Srinivasan</span>.
+            <span class="hero-subtitle">I build thoughtful, clean, and accessible web experiences.</span>
+          </h1>
+
+          <p class="hero-description">
+            I am a junior front-end developer dedicated to crafting modern interfaces with 
+            semantic HTML, responsive CSS, and clean JavaScript. I bridge the gap between design 
+            intuition and dependable code.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <span>Explore My Work</span>
+              <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary">Contact Me</a>
+          </div>
+
+          <!-- Social Quick Links -->
+          <div class="hero-socials">
+            <span class="hero-socials-label">Connect:</span>
+            <div class="social-links">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub Profile">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn Profile">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+              </a>
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Twitter / X Profile">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual / Code Card Element -->
+        <div class="hero-visual" aria-hidden="true">
+          <div class="terminal-card">
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <span class="terminal-title">developer.config.json</span>
+            </div>
+            <div class="terminal-body">
+              <pre><code><span class="code-keyword">const</span> <span class="code-var">developer</span> = {
+  <span class="code-key">name</span>: <span class="code-str">"Srinivasan"</span>,
+  <span class="code-key">focus</span>: <span class="code-str">"Front-End Engineering"</span>,
+  <span class="code-key">stack</span>: [<span class="code-str">"HTML5"</span>, <span class="code-str">"CSS3"</span>, <span class="code-str">"JavaScript"</span>],
+  <span class="code-key">mindset</span>: <span class="code-str">"Continuous Learner"</span>,
+  <span class="code-key">currentlyBuilding</span>: <span class="code-str">"Accessible Web Apps"</span>,
+  <span class="code-key">readyForHire</span>: <span class="code-bool">true</span>
+};</code></pre>
+            </div>
+            <div class="terminal-footer">
+              <span class="terminal-prompt">$</span> npm run build:future
+              <span class="terminal-cursor"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">01. About Me</span>
+          <h2 class="section-title">Crafting code with intention and curiosity</h2>
+          <p class="section-lead">A glimpse into who I am, why I build for the web, and how I work.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text-content">
+            <p class="paragraph">
+              Hello! I'm Srinivasan. My journey into web development started when I realized that every digital product I love began as lines of code in a simple text editor. That sparked a deep passion for understanding how pixels, logic, and human interactions come together.
+            </p>
+            <p class="paragraph">
+              As a junior developer, I spend every day building real-world projects, studying semantic markup, mastering CSS layouts (Flexbox and Grid), and deepening my grasp of core JavaScript fundamentals. Rather than rushing into complex frameworks, I prioritized learning the web platform from the ground up.
+            </p>
+            <p class="paragraph">
+              When I'm not coding, you can find me reviewing accessibility guidelines, participating in open-source discussions, reading technical articles, or experimenting with micro-interactions.
+            </p>
+
+            <div class="about-highlights">
+              <div class="highlight-item">
+                <span class="highlight-num">100%</span>
+                <span class="highlight-desc">Vanilla Foundations (No heavy bloat)</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-num">Daily</span>
+                <span class="highlight-desc">Committed Git &amp; GitHub Workflow</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-num">WCAG</span>
+                <span class="highlight-desc">Accessibility &amp; Semantic Awareness</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-card-container">
+            <div class="info-card">
+              <h3 class="info-card-title">What I Value</h3>
+              <ul class="info-list">
+                <li class="info-list-item">
+                  <div class="info-icon" aria-hidden="true">✨</div>
+                  <div>
+                    <strong>Clean Simplicity</strong>
+                    <p>Writing readable code that my future teammates will appreciate.</p>
+                  </div>
+                </li>
+                <li class="info-list-item">
+                  <div class="info-icon" aria-hidden="true">📱</div>
+                  <div>
+                    <strong>Responsive by Default</strong>
+                    <p>Ensuring fluid layouts that feel natural on any screen size.</p>
+                  </div>
+                </li>
+                <li class="info-list-item">
+                  <div class="info-icon" aria-hidden="true">🌱</div>
+                  <div>
+                    <strong>Growth Mindset</strong>
+                    <p>Embracing code reviews, constructive feedback, and continuous learning.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">02. My Toolkit</span>
+          <h2 class="section-title">Skills &amp; Technologies</h2>
+          <p class="section-lead">The essential tools I use to build modern, performant web applications.</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- HTML5 -->
+          <article class="skill-card">
+            <div class="skill-icon-wrap" aria-hidden="true">
+              <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 3l1.8 17.1L12 22l6.2-1.9L20 3H4z"></path>
+                <path d="M8 8h8M8 12h7m-6 4l3.5 1 3.5-1"></path>
+              </svg>
+            </div>
+            <div class="skill-header">
+              <h3 class="skill-name">HTML5</h3>
+              <span class="badge badge-accent">Core Foundation</span>
+            </div>
+            <p class="skill-desc">
+              Semantic structure, accessible landmarks, SEO best practices, forms, and audio/video elements.
+            </p>
+            <div class="skill-tags">
+              <span class="tag">Semantic Tags</span>
+              <span class="tag">Accessibility (a11y)</span>
+              <span class="tag">SEO Basics</span>
+            </div>
+          </article>
+
+          <!-- CSS3 -->
+          <article class="skill-card">
+            <div class="skill-icon-wrap" aria-hidden="true">
+              <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 3l1.8 17.1L12 22l6.2-1.9L20 3H4z"></path>
+                <path d="M7 8h10l-1 5H8l.5 3 3.5 1 3.5-1 .5-2"></path>
+              </svg>
+            </div>
+            <div class="skill-header">
+              <h3 class="skill-name">CSS3</h3>
+              <span class="badge badge-accent">Core Foundation</span>
+            </div>
+            <p class="skill-desc">
+              Responsive layouts with Flexbox and Grid, CSS Custom Properties (variables), transitions, and mobile-first design.
+            </p>
+            <div class="skill-tags">
+              <span class="tag">Flexbox &amp; Grid</span>
+              <span class="tag">CSS Variables</span>
+              <span class="tag">Responsive Design</span>
+            </div>
+          </article>
+
+          <!-- JavaScript -->
+          <article class="skill-card">
+            <div class="skill-icon-wrap" aria-hidden="true">
+              <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+                <path d="M8 15c0 1.5.5 2.5 2 2.5s2-1 2-2.5V9"></path>
+                <path d="M15 13.5c.5.5 1 1 2 1s1.5-.5 1.5-1.2c0-1.5-2.5-1.3-2.5-2.8 0-.8.6-1.5 1.8-1.5 1 0 1.6.4 2 1"></path>
+              </svg>
+            </div>
+            <div class="skill-header">
+              <h3 class="skill-name">JavaScript (ES6+)</h3>
+              <span class="badge badge-accent">Core Logic</span>
+            </div>
+            <p class="skill-desc">
+              DOM manipulation, event delegation, asynchronous fetch API, promises, arrays &amp; objects methods, and localStorage.
+            </p>
+            <div class="skill-tags">
+              <span class="tag">DOM Manipulation</span>
+              <span class="tag">Fetch API</span>
+              <span class="tag">ES6 Modules</span>
+            </div>
+          </article>
+
+          <!-- Git & GitHub -->
+          <article class="skill-card">
+            <div class="skill-icon-wrap" aria-hidden="true">
+              <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="18" cy="18" r="3"></circle>
+                <circle cx="6" cy="6" r="3"></circle>
+                <circle cx="18" cy="6" r="3"></circle>
+                <line x1="6" y1="9" x2="6" y2="21"></line>
+                <path d="M9 9l6 6"></path>
+                <path d="M15 6h-6"></path>
+              </svg>
+            </div>
+            <div class="skill-header">
+              <h3 class="skill-name">Git &amp; GitHub</h3>
+              <span class="badge badge-accent">Version Control</span>
+            </div>
+            <p class="skill-desc">
+              Branching, merging, writing meaningful commit messages, opening pull requests, and publishing with GitHub Pages.
+            </p>
+            <div class="skill-tags">
+              <span class="tag">Branch Workflow</span>
+              <span class="tag">Pull Requests</span>
+              <span class="tag">GitHub Pages</span>
+            </div>
+          </article>
+
+          <!-- Web Accessibility -->
+          <article class="skill-card">
+            <div class="skill-icon-wrap" aria-hidden="true">
+              <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="4" r="2"></circle>
+                <path d="M5 9h14M12 9v12M8 21l4-5 4 5"></path>
+              </svg>
+            </div>
+            <div class="skill-header">
+              <h3 class="skill-name">Web Accessibility</h3>
+              <span class="badge badge-subtle">Standards</span>
+            </div>
+            <p class="skill-desc">
+              Color contrast awareness, ARIA roles/attributes, keyboard navigation support, and readable screen-reader structure.
+            </p>
+            <div class="skill-tags">
+              <span class="tag">WCAG 2.1</span>
+              <span class="tag">Keyboard Nav</span>
+              <span class="tag">Screen Readers</span>
+            </div>
+          </article>
+
+          <!-- Developer Tooling -->
+          <article class="skill-card">
+            <div class="skill-icon-wrap" aria-hidden="true">
+              <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="4 17 10 11 4 5"></polyline>
+                <line x1="12" y1="19" x2="20" y2="19"></line>
+              </svg>
+            </div>
+            <div class="skill-header">
+              <h3 class="skill-name">Tooling &amp; Workflow</h3>
+              <span class="badge badge-subtle">Workflow</span>
+            </div>
+            <p class="skill-desc">
+              VS Code environment, Chrome DevTools debugging, Lighthouse performance auditing, and npm command-line basics.
+            </p>
+            <div class="skill-tags">
+              <span class="tag">Chrome DevTools</span>
+              <span class="tag">VS Code</span>
+              <span class="tag">Lighthouse</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">03. Selected Works</span>
+          <h2 class="section-title">Projects I've Built</h2>
+          <p class="section-lead">Real examples demonstrating practical problem-solving, clean code, and user-centric design.</p>
+        </div>
+
+        <div class="projects-list">
+          <!-- Project 1: TaskPulse -->
+          <article class="project-card" data-project-id="taskpulse">
+            <div class="project-preview">
+              <div class="preview-browser-bar">
+                <span class="browser-dot red"></span>
+                <span class="browser-dot yellow"></span>
+                <span class="browser-dot green"></span>
+                <span class="browser-url">srinivasan.dev/taskpulse</span>
+              </div>
+              <div class="preview-canvas preview-taskpulse">
+                <div class="mini-app-mockup">
+                  <div class="mockup-header">
+                    <span class="mockup-chip active">All (4)</span>
+                    <span class="mockup-chip">Active</span>
+                    <span class="mockup-chip">Completed</span>
+                  </div>
+                  <div class="mockup-list">
+                    <div class="mockup-row done">
+                      <span class="mockup-check">✓</span>
+                      <span class="mockup-text">Set up CSS custom properties</span>
+                    </div>
+                    <div class="mockup-row done">
+                      <span class="mockup-check">✓</span>
+                      <span class="mockup-text">Implement LocalStorage persistence</span>
+                    </div>
+                    <div class="mockup-row">
+                      <span class="mockup-check"></span>
+                      <span class="mockup-text">Add category filter tabs</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-info">
+              <div class="project-meta">
+                <span class="project-number">Project 01</span>
+                <span class="project-type">Web Application</span>
+              </div>
+              <h3 class="project-title">TaskPulse &ndash; Habit &amp; Task Manager</h3>
+              <p class="project-desc">
+                A productivity web application built with vanilla JavaScript that allows users to create, organize, filter, and track daily tasks. It persists data via browser LocalStorage with zero external dependencies.
+              </p>
+              
+              <div class="project-tech-stack">
+                <span class="tech-badge">HTML5</span>
+                <span class="tech-badge">CSS3 Flexbox</span>
+                <span class="tech-badge">JavaScript (ES6)</span>
+                <span class="tech-badge">LocalStorage</span>
+              </div>
+
+              <div class="project-actions">
+                <button type="button" class="btn btn-sm btn-primary project-modal-trigger" data-project="taskpulse">
+                  <span>Quick View</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                    <circle cx="12" cy="12" r="3"></circle>
+                  </svg>
+                </button>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                  <span>GitHub</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: DevShelf -->
+          <article class="project-card project-reverse" data-project-id="devshelf">
+            <div class="project-preview">
+              <div class="preview-browser-bar">
+                <span class="browser-dot red"></span>
+                <span class="browser-dot yellow"></span>
+                <span class="browser-dot green"></span>
+                <span class="browser-url">srinivasan.dev/devshelf</span>
+              </div>
+              <div class="preview-canvas preview-devshelf">
+                <div class="mini-app-mockup">
+                  <div class="mockup-search-bar">
+                    <span class="search-icon">🔍</span>
+                    <span class="search-placeholder">Filter bookmarks by tag...</span>
+                  </div>
+                  <div class="mockup-grid">
+                    <div class="mockup-grid-card">
+                      <div class="card-bar"></div>
+                      <span class="card-title">MDN Web Docs</span>
+                    </div>
+                    <div class="mockup-grid-card">
+                      <div class="card-bar"></div>
+                      <span class="card-title">CSS-Tricks Guide</span>
+                    </div>
+                    <div class="mockup-grid-card">
+                      <div class="card-bar"></div>
+                      <span class="card-title">JavaScript.info</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-info">
+              <div class="project-meta">
+                <span class="project-number">Project 02</span>
+                <span class="project-type">Curated Directory</span>
+              </div>
+              <h3 class="project-title">DevShelf &ndash; Curated Resource Vault</h3>
+              <p class="project-desc">
+                A fast, searchable reference directory for beginner developers. Features real-time client-side keyword filtering, responsive CSS Grid cards, and direct copy-to-clipboard functionality for code snippets.
+              </p>
+              
+              <div class="project-tech-stack">
+                <span class="tech-badge">Semantic HTML5</span>
+                <span class="tech-badge">CSS Grid</span>
+                <span class="tech-badge">Vanilla JS</span>
+                <span class="tech-badge">Filter Logic</span>
+              </div>
+
+              <div class="project-actions">
+                <button type="button" class="btn btn-sm btn-primary project-modal-trigger" data-project="devshelf">
+                  <span>Quick View</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                    <circle cx="12" cy="12" r="3"></circle>
+                  </svg>
+                </button>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                  <span>GitHub</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: WeatherFlow -->
+          <article class="project-card" data-project-id="weatherflow">
+            <div class="project-preview">
+              <div class="preview-browser-bar">
+                <span class="browser-dot red"></span>
+                <span class="browser-dot yellow"></span>
+                <span class="browser-dot green"></span>
+                <span class="browser-url">srinivasan.dev/weatherflow</span>
+              </div>
+              <div class="preview-canvas preview-weatherflow">
+                <div class="mini-app-mockup">
+                  <div class="weather-top">
+                    <div>
+                      <div class="city-name">San Francisco, CA</div>
+                      <div class="city-sub">Clear Sky &bull; 68&deg;F</div>
+                    </div>
+                    <div class="weather-icon-sun">☀️</div>
+                  </div>
+                  <div class="weather-stats">
+                    <div class="stat-pill">Humidity: 52%</div>
+                    <div class="stat-pill">Wind: 7mph</div>
+                    <div class="stat-pill">UV: Moderate</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-info">
+              <div class="project-meta">
+                <span class="project-number">Project 03</span>
+                <span class="project-type">API Integration</span>
+              </div>
+              <h3 class="project-title">WeatherFlow &ndash; Real-Time Weather App</h3>
+              <p class="project-desc">
+                An asynchronous weather dashboard that fetches current atmospheric data using the OpenWeather API. Implements graceful error handling for missing cities and dynamic UI color shifting according to temperature.
+              </p>
+              
+              <div class="project-tech-stack">
+                <span class="tech-badge">Async/Await</span>
+                <span class="tech-badge">REST API</span>
+                <span class="tech-badge">CSS Animation</span>
+                <span class="tech-badge">Error Handling</span>
+              </div>
+
+              <div class="project-actions">
+                <button type="button" class="btn btn-sm btn-primary project-modal-trigger" data-project="weatherflow">
+                  <span>Quick View</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                    <circle cx="12" cy="12" r="3"></circle>
+                  </svg>
+                </button>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                  <span>GitHub</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">04. Get In Touch</span>
+          <h2 class="section-title">Let's build something together</h2>
+          <p class="section-lead">Have an internship opportunity, project collaboration, or question? My inbox is always open.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Details Column -->
+          <div class="contact-details">
+            <h3 class="contact-subtitle">Direct Reach</h3>
+            <p class="contact-intro">
+              I am actively looking for junior developer positions, internships, and open-source contributions. Feel free to copy my email or message me directly.
+            </p>
+
+            <div class="contact-card">
+              <div class="contact-card-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div class="contact-card-info">
+                <span class="contact-card-label">Email Address</span>
+                <span class="contact-card-val" id="emailText">srinivasan.dev@example.com</span>
+              </div>
+              <button type="button" class="copy-email-btn" id="copyEmailBtn" aria-label="Copy email address to clipboard">
+                <span class="copy-tooltip" id="copyTooltip">Copy</span>
+                <svg class="copy-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+              </button>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-card-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div class="contact-card-info">
+                <span class="contact-card-label">Location &amp; Availability</span>
+                <span class="contact-card-val">San Francisco, CA &bull; Remote Friendly</span>
+              </div>
+            </div>
+
+            <div class="contact-social-block">
+              <span class="contact-card-label">Find Me Online</span>
+              <div class="social-links-large">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-chip">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                  <span>GitHub</span>
+                </a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-chip">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect x="2" y="9" width="4" height="12"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                  </svg>
+                  <span>LinkedIn</span>
+                </a>
+                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-chip">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                  </svg>
+                  <span>Twitter / X</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form Column -->
+          <div class="contact-form-wrapper">
+            <form id="contactForm" class="contact-form" novalidate>
+              <!-- Status message banner -->
+              <div id="formStatus" class="form-status" role="alert" aria-live="polite"></div>
+
+              <div class="form-group">
+                <label for="userName" class="form-label">
+                  Your Name <span class="required" aria-hidden="true">*</span>
+                </label>
+                <div class="input-wrapper">
+                  <input 
+                    type="text" 
+                    id="userName" 
+                    name="name" 
+                    class="form-control" 
+                    placeholder="e.g. Jane Doe"
+                    autocomplete="name"
+                    required
+                  >
+                </div>
+                <span class="field-error" id="nameError" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="userEmail" class="form-label">
+                  Your Email <span class="required" aria-hidden="true">*</span>
+                </label>
+                <div class="input-wrapper">
+                  <input 
+                    type="email" 
+                    id="userEmail" 
+                    name="email" 
+                    class="form-control" 
+                    placeholder="e.g. jane@company.com"
+                    autocomplete="email"
+                    required
+                  >
+                </div>
+                <span class="field-error" id="emailError" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="userSubject" class="form-label">Subject</label>
+                <div class="input-wrapper">
+                  <input 
+                    type="text" 
+                    id="userSubject" 
+                    name="subject" 
+                    class="form-control" 
+                    placeholder="e.g. Junior Front-End Role / Project Inquiry"
+                  >
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="userMessage" class="form-label">
+                  Message <span class="required" aria-hidden="true">*</span>
+                </label>
+                <div class="input-wrapper">
+                  <textarea 
+                    id="userMessage" 
+                    name="message" 
+                    rows="5" 
+                    class="form-control" 
+                    placeholder="Tell me about your team, project, or what you are looking for..."
+                    required
+                  ></textarea>
+                </div>
+                <span class="field-error" id="messageError" aria-live="polite"></span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block submit-btn" id="submitBtn">
+                <span class="btn-text">Send Message</span>
+                <svg class="btn-spinner" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <line x1="12" y1="2" x2="12" y2="6"></line>
+                  <line x1="12" y1="18" x2="12" y2="22"></line>
+                  <line x1="4.93" y1="4.93" x2="7.76" y2="7.76"></line>
+                  <line x1="16.24" y1="16.24" x2="19.07" y2="19.07"></line>
+                  <line x1="2" y1="12" x2="6" y2="12"></line>
+                  <line x1="18" y1="12" x2="22" y2="12"></line>
+                  <line x1="4.93" y1="19.07" x2="7.76" y2="16.24"></line>
+                  <line x1="16.24" y1="7.76" x2="19.07" y2="4.93"></line>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Project Detail Modal -->
+  <div class="modal-backdrop" id="projectModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalProjectTitle">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 class="modal-title" id="modalProjectTitle">Project Details</h3>
+        <button type="button" class="modal-close" id="modalCloseBtn" aria-label="Close modal window">&times;</button>
+      </div>
+      <div class="modal-body" id="modalBody">
+        <!-- Content injected dynamically via script.js -->
+      </div>
+      <div class="modal-footer" id="modalFooter">
+        <button type="button" class="btn btn-sm btn-secondary" id="modalCancelBtn">Close</button>
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary" id="modalExternalLink">View Source on GitHub</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <!-- Back to Top Button -->
+  <button type="button" class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <line x1="12" y1="19" x2="12" y2="5"></line>
+      <polyline points="5 12 12 5 19 12"></polyline>
+    </svg>
+  </button>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <p class="footer-copy">&copy; <span id="currentYear">2026</span> Srinivasan. Handcrafted with HTML5, CSS3, &amp; Vanilla JavaScript.</p>
+      </div>
+      <div class="footer-right">
+        <p class="footer-note">Designed with precision &bull; Fast, lightweight, &amp; accessible</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
